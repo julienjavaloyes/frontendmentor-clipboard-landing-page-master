@@ -1,0 +1,23 @@
+@use "../0-abstracts/colors" as c;
+
+body {
+    button {
+        border: none;
+        width: 100%;
+        padding: 1rem 0;
+        margin: 1rem 0;
+        border-radius: 4rem;
+
+        &:hover {
+            border: none;
+        }
+    }
+    .green {
+        background-color: c.$StrongCyan;
+        box-shadow: 0.1rem 0.2rem 0rem c.$StrongCyan2;
+    }
+    .blue {
+        background-color: c.$LightBlue;
+        box-shadow: 0.1rem 0.2rem 0.1rem c.$LightBlue2;
+    }
+}

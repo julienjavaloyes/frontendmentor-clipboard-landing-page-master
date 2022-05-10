@@ -1,0 +1,57 @@
+
+@use  '../0-abstracts/colors' as c;
+
+body {
+    background-color:white;
+    background-image: url('../images/bg-header-mobile.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    .container {
+        main {
+            padding-top: 7rem;
+            h1, h2, h3 {
+                color: c.$DarkGrayishBlue;
+            }
+            p {
+                margin: 0;
+                color: c.$GrayishBlue;
+                margin-bottom: 3rem;
+            }
+            h1 {
+                padding-top: 3rem;
+            }
+            h2 {
+                padding-top: 8rem;
+            }
+            button {
+                color: white;
+            }
+            .largeimage {
+                width: 100%;
+            } 
+        }
+
+        footer {
+            background-color: rgb(245, 245, 245);
+            .logosmall {
+                width: 3.5rem;
+            }
+            nav {
+                ul {
+                    padding: 0;
+                    li {
+                        list-style: none;
+                        margin: 1.5rem;
+                        color:  c.$DarkGrayishBlue;
+                    }
+                    li:hover {
+                        color: c.$StrongCyan;
+                        cursor: pointer;
+                    }
+                }
+
+
+            }
+        }
+    }
+}

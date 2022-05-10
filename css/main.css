@@ -1,0 +1,212 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/*
+h1,
+h2,
+h3 {
+    margin-top: 0;
+}
+
+a,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+*/
+body {
+  background-color: white;
+  background-image: url("../images/bg-header-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body .container main {
+  padding-top: 7rem;
+}
+body .container main h1, body .container main h2, body .container main h3 {
+  color: hsl(210deg, 10%, 33%);
+}
+body .container main p {
+  margin: 0;
+  color: hsl(201deg, 11%, 66%);
+  margin-bottom: 3rem;
+}
+body .container main h1 {
+  padding-top: 3rem;
+}
+body .container main h2 {
+  padding-top: 8rem;
+}
+body .container main button {
+  color: white;
+}
+body .container main .largeimage {
+  width: 100%;
+}
+body .container footer {
+  background-color: rgb(245, 245, 245);
+}
+body .container footer .logosmall {
+  width: 3.5rem;
+}
+body .container footer nav ul {
+  padding: 0;
+}
+body .container footer nav ul li {
+  list-style: none;
+  margin: 1.5rem;
+  color: hsl(210deg, 10%, 33%);
+}
+body .container footer nav ul li:hover {
+  color: hsl(171deg, 66%, 44%);
+  cursor: pointer;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1rem;
+  text-align: center;
+}
+body h1 {
+  line-height: 2.5rem;
+}
+body h2 {
+  line-height: 2.5rem;
+  font-size: 1.7rem;
+}
+body h3 {
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+}
+body p {
+  line-height: 1.5rem;
+}
+body button {
+  font-weight: 600;
+  font-size: 1rem;
+}
+body li {
+  font-size: 1.1rem;
+}
+
+body button {
+  border: none;
+  width: 100%;
+  padding: 1rem 0;
+  margin: 1rem 0;
+  border-radius: 4rem;
+}
+body button:hover {
+  border: none;
+}
+body .green {
+  background-color: hsl(171deg, 66%, 44%);
+  box-shadow: 0.1rem 0.2rem 0rem hsl(171deg, 65%, 31%);
+}
+body .blue {
+  background-color: hsl(233deg, 100%, 69%);
+  box-shadow: 0.1rem 0.2rem 0.1rem hsl(233deg, 44%, 41%);
+}
+
+body .container {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+body .container main {
+  padding: 4rem;
+}
+body .container main .img-entreprise {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .container main .img-entreprise img {
+  width: 40%;
+  margin: 2rem;
+}
+body .container footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+body .container footer .social img {
+  padding: 1rem;
+}
+
+@media (min-width: 600px) {
+  body {
+    background-image: url("../images/bg-header-desktop.png");
+  }
+  body .container {
+    width: 700px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  body .container .buttongrid {
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  body .container .computergrid {
+    text-align: left;
+    gap: 1rem;
+    width: 900px;
+    transform: translateX(-164px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  body .container .computergrid .largeimage {
+    width: 130%;
+    transform: translateX(-164px);
+  }
+  body .container .superchargegrid {
+    width: 900px;
+    transform: translateX(-100px);
+    display: flex;
+    flex-direction: row;
+  }
+  body .container main .img-entreprise {
+    width: 900px;
+    transform: translateX(-100px);
+    display: flex;
+    flex-direction: row;
+  }
+  body footer {
+    width: 100vw;
+    margin-top: 3rem;
+    position: absolute;
+    transform: translateX(calc(350px - 50vw));
+  }
+  body footer .footergrid {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5rem;
+  }
+  body footer .footergrid .internal {
+    display: inline;
+  }
+  body footer .footergrid ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}/*# sourceMappingURL=main.css.map */
